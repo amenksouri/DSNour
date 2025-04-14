@@ -19,6 +19,9 @@ public class ReservationModel {
     
     private Date anneeUniversitaire;
     private boolean estValide;
+    
+    
+    
   @ManyToOne
   @JoinColumn(name="Chambre_id")
   private ChambreModel Chambre;

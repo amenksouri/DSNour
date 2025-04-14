@@ -14,7 +14,7 @@ public class universiteController {
 	@Autowired
     private  universiteService universiteService;
 
-    @GetMapping
+    @GetMapping("/all")
     public List<UniversiteModel> getAllUniversites() {
         return universiteService.retrieveAllUniversites();
     }
@@ -24,12 +24,12 @@ public class universiteController {
         return universiteService.retrieveUniversite(id);
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public UniversiteModel addUniversite(@RequestBody UniversiteModel universite) {
         return universiteService.addUniversite(universite);
     }
 
-    @PutMapping
+    @PutMapping("/delete")
     public UniversiteModel updateUniversite(@RequestBody UniversiteModel universite) {
         return universiteService.updateUniversite(universite);
     }

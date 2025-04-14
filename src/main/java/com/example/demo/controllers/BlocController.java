@@ -18,7 +18,7 @@ public class BlocController {
 	@Autowired
     private  BlocServices blocService;  
 
-    @GetMapping
+    @GetMapping("/all")
     public List<BlocModel> getAllBlocs() {
         return blocService.retrieveAllBlocs();
     }
@@ -28,7 +28,7 @@ public class BlocController {
         return blocService.retrieveBloc(id);
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public BlocModel addBloc(@RequestBody BlocModel bloc) {
         return blocService.addBloc(bloc);
     }
