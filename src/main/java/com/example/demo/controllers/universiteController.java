@@ -29,7 +29,7 @@ public class universiteController {
         return universiteService.addUniversite(universite);
     }
 
-    @PutMapping("/delete")
+    @PutMapping("/update")
     public UniversiteModel updateUniversite(@RequestBody UniversiteModel universite) {
         return universiteService.updateUniversite(universite);
     }

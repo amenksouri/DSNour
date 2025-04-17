@@ -1,4 +1,7 @@
 package com.example.demo.serviceImpl;
+
+
+
 import com.example.demo.models.BlocModel;
 import com.example.demo.models.ChambreModel;
 import com.example.demo.repository.blocRepository;
@@ -18,7 +21,7 @@ import java.util.Optional;
 public class blocServiceImpl implements BlocServices {
 
 	@Autowired
-	private blocRepository blocRepo;
+	private blocRepository blocRepo ;
 	
 	@Override
 	public List<BlocModel> retrieveAllBlocs() {
@@ -58,5 +61,6 @@ public class blocServiceImpl implements BlocServices {
 		blocRepo.deleteById(idBloc);
 		
 	}
+	
     
 }

@@ -17,11 +17,25 @@ public class UniversiteModel {
     
     private String nomUniversite;
     private String adresse;
+    
+    
+    
     @OneToOne(cascade = CascadeType.ALL)
     private LoyerModel LoyerModel;
+ 
+    
+    
+    
+    
+	public UniversiteModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getIdUniversite() {
 		return idUniversite;
 	}
+	
 	public void setIdUniversite(long idUniversite) {
 		this.idUniversite = idUniversite;
 	}

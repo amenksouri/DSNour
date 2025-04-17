@@ -10,4 +10,5 @@ public interface BlocServices {
     BlocModel updateBloc(BlocModel b);
     BlocModel retrieveBloc(long idBloc);
     void removeBloc(long idBloc);
+    
 }

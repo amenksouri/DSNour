@@ -32,4 +32,17 @@ public class BlocController {
     public BlocModel addBloc(@RequestBody BlocModel bloc) {
         return blocService.addBloc(bloc);
     }
+    @PutMapping("/update/{id}")
+    public BlocModel updateBloc(@RequestBody BlocModel bloc) {
+    	return blocService.updateBloc(bloc);
+    }
+   
+    
+    @DeleteMapping("/{id}")
+    public void deleteBloc(@PathVariable long id) {
+    	blocService.removeBloc(id);
+    }
+    
+    
+    
 }  

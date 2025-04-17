@@ -29,4 +29,50 @@ public class ChambreModel {
 
     @ManyToOne
     private BlocModel bloc;
+
+	public long getIdChambre() {
+		return idChambre;
+	}
+
+	public void setIdChambre(long idChambre) {
+		this.idChambre = idChambre;
+	}
+
+	public long getNumeroChambre() {
+		return numeroChambre;
+	}
+
+	public void setNumeroChambre(long numeroChambre) {
+		this.numeroChambre = numeroChambre;
+	}
+
+	public typeChambreEnum getTypeC() {
+		return typeC;
+	}
+
+	public void setTypeC(typeChambreEnum typeC) {
+		this.typeC = typeC;
+	}
+
+	public Set<ReservationModel> getReservations() {
+		return reservations;
+	}
+
+	public void setReservations(Set<ReservationModel> reservations) {
+		this.reservations = reservations;
+	}
+
+	public BlocModel getBloc() {
+		return bloc;
+	}
+
+	public void setBloc(BlocModel bloc) {
+		this.bloc = bloc;
+	}
+    
+    
+    
+    
+    
+    
 }

@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.models.ReservationModel;
 
-public interface reservationRepository extends JpaRepository<ReservationModel,String> {
+public interface reservaRepo extends JpaRepository<ReservationModel, Long> {
 
 }
